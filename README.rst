@@ -7,7 +7,6 @@ It is also possible to use the font or colour selectors separately.
 
 A universal (iPhone/iPad) demo app is included with the source.
 
-
 Screenshots
 -----------
 
