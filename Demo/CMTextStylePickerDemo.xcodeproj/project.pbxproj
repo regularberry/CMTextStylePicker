@@ -12,11 +12,7 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2860E328111B887F00E27156 /* AppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E326111B887F00E27156 /* AppDelegate_iPhone.m */; };
 		2860E329111B887F00E27156 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E327111B887F00E27156 /* MainWindow_iPhone.xib */; };
-		2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E32C111B888700E27156 /* AppDelegate_iPad.m */; };
-		2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_iPad.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
-		83A21F801296419B0076D5D9 /* IPadDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A21F7E1296419B0076D5D9 /* IPadDemoViewController.m */; };
-		83A21F811296419B0076D5D9 /* IPadDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A21F7F1296419B0076D5D9 /* IPadDemoViewController.xib */; };
 		83A21FC712964B380076D5D9 /* CMColourSelectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A21FC212964B380076D5D9 /* CMColourSelectTableViewController.m */; };
 		83A21FC812964B380076D5D9 /* CMColourSelectTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A21FC312964B380076D5D9 /* CMColourSelectTableViewController.xib */; };
 		83A21FC912964B380076D5D9 /* CMTextStylePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A21FC512964B380076D5D9 /* CMTextStylePickerViewController.m */; };
@@ -38,15 +34,9 @@
 		2860E325111B887F00E27156 /* AppDelegate_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate_iPhone.h; sourceTree = "<group>"; };
 		2860E326111B887F00E27156 /* AppDelegate_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate_iPhone.m; sourceTree = "<group>"; };
 		2860E327111B887F00E27156 /* MainWindow_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		2860E32B111B888700E27156 /* AppDelegate_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate_iPad.h; sourceTree = "<group>"; };
-		2860E32C111B888700E27156 /* AppDelegate_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate_iPad.m; sourceTree = "<group>"; };
-		2860E32D111B888700E27156 /* MainWindow_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow_iPad.xib; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* CMTextStylePickerDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMTextStylePickerDemo_Prefix.pch; sourceTree = "<group>"; };
-		83A21F7D1296419B0076D5D9 /* IPadDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPadDemoViewController.h; sourceTree = "<group>"; };
-		83A21F7E1296419B0076D5D9 /* IPadDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPadDemoViewController.m; sourceTree = "<group>"; };
-		83A21F7F1296419B0076D5D9 /* IPadDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IPadDemoViewController.xib; sourceTree = "<group>"; };
 		83A21FC112964B380076D5D9 /* CMColourSelectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMColourSelectTableViewController.h; sourceTree = "<group>"; };
 		83A21FC212964B380076D5D9 /* CMColourSelectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMColourSelectTableViewController.m; sourceTree = "<group>"; };
 		83A21FC312964B380076D5D9 /* CMColourSelectTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CMColourSelectTableViewController.xib; sourceTree = "<group>"; };
@@ -104,19 +94,6 @@
 			path = iPhone;
 			sourceTree = "<group>";
 		};
-		2860E32A111B888700E27156 /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-				2860E32B111B888700E27156 /* AppDelegate_iPad.h */,
-				2860E32C111B888700E27156 /* AppDelegate_iPad.m */,
-				83A21F7D1296419B0076D5D9 /* IPadDemoViewController.h */,
-				83A21F7E1296419B0076D5D9 /* IPadDemoViewController.m */,
-				83A21F7F1296419B0076D5D9 /* IPadDemoViewController.xib */,
-				2860E32D111B888700E27156 /* MainWindow_iPad.xib */,
-			);
-			path = iPad;
-			sourceTree = "<group>";
-		};
 		28EEBF621118D79A00187D67 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				83A21FC012964B380076D5D9 /* CMTextStylePicker */,
-				2860E32A111B888700E27156 /* iPad */,
 				2860E324111B887F00E27156 /* iPhone */,
 				28EEBF621118D79A00187D67 /* Shared */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -239,8 +215,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2860E329111B887F00E27156 /* MainWindow_iPhone.xib in Resources */,
-				2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */,
-				83A21F811296419B0076D5D9 /* IPadDemoViewController.xib in Resources */,
 				83A21FC812964B380076D5D9 /* CMColourSelectTableViewController.xib in Resources */,
 				83A21FCA12964B380076D5D9 /* CMTextStylePickerViewController.xib in Resources */,
 				83A21FD512964EEB0076D5D9 /* CMFontSelectTableViewController.xib in Resources */,
@@ -258,8 +232,6 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				2860E328111B887F00E27156 /* AppDelegate_iPhone.m in Sources */,
-				2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */,
-				83A21F801296419B0076D5D9 /* IPadDemoViewController.m in Sources */,
 				83A21FC712964B380076D5D9 /* CMColourSelectTableViewController.m in Sources */,
 				83A21FC912964B380076D5D9 /* CMTextStylePickerViewController.m in Sources */,
 				83A21FD412964EEB0076D5D9 /* CMFontSelectTableViewController.m in Sources */,
@@ -286,6 +258,7 @@
 				INFOPLIST_FILE = "CMTextStylePickerDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = CMTextStylePickerDemo;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,6 +273,7 @@
 				INFOPLIST_FILE = "CMTextStylePickerDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = CMTextStylePickerDemo;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
