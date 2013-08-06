@@ -99,34 +99,19 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-		
-		CGRect frame = CGRectMake(10.0, 5.0, 25.0, cell.frame.size.height-5.0);
-		UILabel *selectedLabel = [[UILabel alloc] initWithFrame:frame];
-		selectedLabel.tag = kSelectedLabelTag;
-		selectedLabel.font = [UIFont systemFontOfSize:24.0];
-		[cell.contentView addSubview:selectedLabel];
-		[selectedLabel release];
-		
-		frame = CGRectMake(35.0, 5.0, cell.frame.size.width-70.0, cell.frame.size.height-5.0);
-		UILabel *fontNameLabel = [[UILabel alloc] initWithFrame:frame];
-		fontNameLabel.tag = kFontNameLabelTag;
-		[cell.contentView addSubview:fontNameLabel];
-		[fontNameLabel release];
     }
     
     // Configure the cell...
 	NSString *fontName = [self.fontNames objectAtIndex:indexPath.row];
 	
-	UILabel *fontNameLabel = (UILabel *)[cell viewWithTag:kFontNameLabelTag];
-	fontNameLabel.text = fontName;
-	fontNameLabel.font = [UIFont fontWithName:fontName size:16.0];
-	
-	UILabel *selectedLabel = (UILabel *)[cell viewWithTag:kSelectedLabelTag];
+	cell.textLabel.text = fontName;
+	cell.textLabel.font = [UIFont fontWithName:fontName size:16.0];
+    
 	if ([self.selectedFont.fontName isEqualToString:fontName]) {
-		selectedLabel.text = @"✔";
+		cell.accessoryType = UITableViewCellAccessoryCheckmark;
 	}
 	else {
-		selectedLabel.text = @"";
+		cell.accessoryType = UITableViewCellAccessoryNone;
 	}
 	
     return cell;
@@ -178,10 +163,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	NSString *fontName = [self.fontNames objectAtIndex:indexPath.row];
-	self.selectedFont = [UIFont fontWithName:fontName size:self.selectedFont.pointSize];
+	self.selectedFont = [UIFont fontWithName:fontName size:20];
 	
 	[delegate fontStyleSelectTableViewController:self didSelectFont:self.selectedFont];
-	[tableView reloadData];
+	[tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 

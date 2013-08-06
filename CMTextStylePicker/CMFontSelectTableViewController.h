@@ -27,6 +27,8 @@
 #import <UIKit/UIKit.h>
 #import "CMFontStyleSelectTableViewController.h"
 
+@class IASKSpecifier;
+
 
 @protocol CMFontSelectTableViewControllerDelegate;
 
@@ -39,6 +41,7 @@
 
 @property (nonatomic, retain)	NSArray				*fontFamilyNames;
 @property (nonatomic, retain)	UIFont				*selectedFont;
+@property (nonatomic, retain)   IASKSpecifier       *specifier;
 
 @end
 

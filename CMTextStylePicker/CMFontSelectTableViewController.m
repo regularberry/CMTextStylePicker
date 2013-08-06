@@ -25,6 +25,7 @@
 //
 
 #import "CMFontSelectTableViewController.h"
+#import "IASKSpecifier.h"
 
 #define kSelectedLabelTag		1001
 #define kFontNameLabelTag		1002
@@ -32,7 +33,7 @@
 @implementation CMFontSelectTableViewController
 
 @synthesize delegate;
-@synthesize fontFamilyNames, selectedFont;
+@synthesize fontFamilyNames, selectedFont, specifier;
 
 
 #pragma mark -
@@ -228,6 +229,7 @@
 - (void)dealloc {
 	[fontFamilyNames release];
 	[selectedFont release];
+    [specifier release];
 	
     [super dealloc];
 }
