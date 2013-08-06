@@ -337,7 +337,7 @@
 	CGPathRelease(downArrowPath);
 	
 	
-	
+	/*
 	
 	// Draw text
 	NSString *valueStr = [NSString stringWithFormat:@"%d", value];
@@ -347,14 +347,16 @@
 	UIFont *valueFont = [UIFont systemFontOfSize:36.0];
 	UIFont *unitsFont = [UIFont systemFontOfSize:14.0];
 	
-	CGSize valueSize = [valueStr sizeWithFont:valueFont];
-	CGSize unitsSize = [units sizeWithFont:unitsFont];
+	CGSize valueSize = [valueStr sizeWithAttributes:@{NSFontAttributeName:valueFont}];
+	CGSize unitsSize = [units sizeWithAttributes:@{NSFontAttributeName:unitsFont}];
 
 	CGPoint valuePoint = CGPointMake(10.0, (bounds.size.height-valueSize.height)/2);
 	CGPoint unitsPoint = CGPointMake(valuePoint.x+valueSize.width+3.0, (valuePoint.y+valueSize.height)-unitsSize.height-5.0);
 	
-	[valueStr drawAtPoint:valuePoint forWidth:valueSize.width withFont:valueFont minFontSize:valueFont.pointSize actualFontSize:NULL lineBreakMode:UILineBreakModeClip baselineAdjustment:UIBaselineAdjustmentAlignBaselines];
-	[units drawAtPoint:unitsPoint forWidth:unitsSize.width withFont:unitsFont minFontSize:unitsFont.pointSize actualFontSize:NULL lineBreakMode:UILineBreakModeClip baselineAdjustment:UIBaselineAdjustmentAlignBaselines];
+    [valueStr draw]
+    
+	[valueStr drawAtPoint:valuePoint forWidth:valueSize.width withFont:valueFont minFontSize:valueFont.pointSize actualFontSize:NULL lineBreakMode:UILine baselineAdjustment:UIBaselineAdjustmentAlignBaselines];
+	[units drawAtPoint:unitsPoint forWidth:unitsSize.width withFont:unitsFont minFontSize:unitsFont.pointSize actualFontSize:NULL lineBreakMode:UILineBreakModeClip baselineAdjustment:UIBaselineAdjustmentAlignBaselines];*/
 }
 
 

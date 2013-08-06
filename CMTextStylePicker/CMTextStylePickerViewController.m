@@ -205,10 +205,11 @@
 		// iPhone UI
 		self.navigationItem.rightBarButtonItem = self.doneButtonItem;
 	}
-	else {
-		// iPad UI
-		self.contentSizeForViewInPopover = CGSizeMake(320.0, 330.0);
-	}
+}
+
+-(CGSize)preferredContentSize
+{
+    return CGSizeMake(320.0, 330.0);
 }
 
 /*
